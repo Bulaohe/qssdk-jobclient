@@ -1,13 +1,13 @@
 <?php
 
-namespace Qssdk\Jobmanage\Services;
+namespace Ssdk\Jobmanage\Services;
 
-use Qssdk\Jobmanage\Models\JobTask;
-use Qssdk\Jobmanage\Models\JobTaskRecord;
+use Ssdk\Jobmanage\Models\JobTask;
+use Ssdk\Jobmanage\Models\JobTaskRecord;
 use Illuminate\Support\Facades\Mail;
 use Illuminate\Support\Facades\Redis;
-use Qssdk\Jobmanage\Models\JobErrorMsg;
-use Qssdk\Jobmanage\Models\JobEmail;
+use Ssdk\Jobmanage\Models\JobErrorMsg;
+use Ssdk\Jobmanage\Models\JobEmail;
 
 class JobService
 {

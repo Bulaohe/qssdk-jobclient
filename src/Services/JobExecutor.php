@@ -1,11 +1,11 @@
 <?php
-namespace Qssdk\Jobmanage\Services;
+namespace Ssdk\Jobmanage\Services;
 
-use Qssdk\Jobmanage\Models\JobTask;
-use Qssdk\Jobmanage\Models\JobConfig;
+use Ssdk\Jobmanage\Models\JobTask;
+use Ssdk\Jobmanage\Models\JobConfig;
 use Illuminate\Support\Facades\DB;
 use GuzzleHttp\Client;
-use Qssdk\Jobmanage\Models\JobTaskRecord;
+use Ssdk\Jobmanage\Models\JobTaskRecord;
 
 class JobExecutor
 {

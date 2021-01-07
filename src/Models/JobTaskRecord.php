@@ -1,6 +1,6 @@
 <?php
 
-namespace Qssdk\Jobmanage\Models;
+namespace Ssdk\Jobmanage\Models;
 
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Facades\Schema;

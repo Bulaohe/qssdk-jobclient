@@ -1,6 +1,6 @@
 <?php
 
-namespace Qssdk\Jobmanage\Traits;
+namespace Ssdk\Jobmanage\Traits;
 
 use Swoole\Process;
 

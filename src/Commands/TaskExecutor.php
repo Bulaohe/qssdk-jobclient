@@ -1,10 +1,10 @@
 <?php
-namespace Qssdk\Jobmanage\Commands;
+namespace Ssdk\Jobmanage\Commands;
 
 use Illuminate\Console\Command;
 use Symfony\Component\Console\Input\InputOption;
-use Qssdk\Jobmanage\Services\JobExecutor;
-use Qssdk\Jobmanage\Traits\ProcessPoolTrait;
+use Ssdk\Jobmanage\Services\JobExecutor;
+use Ssdk\Jobmanage\Traits\ProcessPoolTrait;
 
 class TaskExecutor extends Command
 {
