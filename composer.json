@@ -2,7 +2,7 @@
     "name": "qssdk/jobclient",
     "description": "Jobmanage Executor",
     "type": "library",
-    "license": "Apache",
+    "license": "MIT",
     "authors": [
         {
             "name": "Simon Quan",
