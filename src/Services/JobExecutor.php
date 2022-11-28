@@ -53,7 +53,7 @@ class JobExecutor
     private static function transTask($task)
     {
         try {
-            DB::beginTransaction();
+            DB::connection('jobclient')->beginTransaction();
 
             // 请求排它锁
             $task_u = JobTask::where('id', $task['id'])->whereIn('task_status', [
@@ -150,7 +150,7 @@ class JobExecutor
                     ]);
                 } // endif task_status
             } // endif task_u
-            DB::commit();
+            DB::connection('jobclient')->commit();
 
             sleep(rand(1, 4)); // 减少并发执行
         } catch (\Exception $e) {
@@ -161,7 +161,7 @@ class JobExecutor
                 'error_msg' => $e->getMessage()
             ], 2);
 
-            DB::rollBack();
+            DB::connection('jobclient')->rollBack();
         }
     }
 }
